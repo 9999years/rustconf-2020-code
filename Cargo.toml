@@ -1,6 +1,6 @@
 [package]
 name = "rustconf-code"
-version = "1.0.0"
+version = "0.1.0"
 authors = ["Rebecca Turner <rbt@sent.as>"]
 edition = "2018"
 
@@ -8,7 +8,13 @@ edition = "2018"
 
 [dependencies]
 serde = { version = "1.0", features = ["derive"] }
+url = "2.1.1"
 reqwest = { version = "0.10.6", features = [ "blocking" ] }
+derive_more = "0.99.9"
+quick-xml = { version = "0.18", features = [ "serialize" ] }
+thiserror = "1.0.20"
 serde_json = "1.0.56"
 structopt = "0.3.15"
+chrono = "0.4.13"
+bytes = "0.5.6"
 eyre = "0.6.0"
